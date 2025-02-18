@@ -1,4 +1,5 @@
 import CartWidget from "./CartWidget";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -12,25 +13,10 @@ const NavBar = () => {
         {/* Enlaces de navegación (simulados) */}
         <ul className="flex space-x-6">
           <li>
-            <a href="/" className="hover:text-blue-300 transition duration-300">
-              Inicio
-            </a>
+            <Link to="/category/electronica">Electronica</Link>
           </li>
           <li>
-            <a
-              href="/category/electronics"
-              className="hover:text-blue-300 transition duration-300"
-            >
-              Electrónica
-            </a>
-          </li>
-          <li>
-            <a
-              href="/category/clothing"
-              className="hover:text-blue-300 transition duration-300"
-            >
-              Ropa
-            </a>
+            <Link to="/category/ropa">Ropa</Link>
           </li>
         </ul>
 
